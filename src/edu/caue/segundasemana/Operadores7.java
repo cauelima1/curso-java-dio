@@ -22,7 +22,7 @@ public class Operadores7 {
 
     System.out.println(condicao2);
     
-sds
+
     }
 
 }
