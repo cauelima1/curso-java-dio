@@ -21,6 +21,8 @@ public class Operadores7 {
         System.out.print("Um dos valores precisa ser verdadeiro");
 
     System.out.println(condicao2);
+    
+sds
     }
 
 }
