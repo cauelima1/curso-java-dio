@@ -7,34 +7,34 @@ public class ProcessoSeletivo {
 	
 	public static void main(String[] args) {
 			boolean novamente = true;
-			Scanner scan = new Scanner(System.in);
-			
-			try {
-				while (novamente == true) {
-					System.out.println("Entre com o salario do canditado: ");		
-					double salarioPretendido = scan.nextDouble();
-					VerificaSalario(salarioPretendido);		
-					
+			try (Scanner scan = new Scanner(System.in)) {
+				try {
+					while (novamente == true) {
+						System.out.println("Entre com o salario do canditado: ");		
+						double salarioPretendido = scan.nextDouble();
+						VerificaSalario(salarioPretendido);		
 						
-					System.out.println("Deseja calcular otra vez? (s / n)");
-					String escolha = scan.next();
+							
+						System.out.println("Deseja calcular otra vez? (s / n)");
+						String escolha = scan.next();
+						
+						if (escolha.equals("s")) {
+							novamente = true;
+						}
+						else { 
+							novamente = false;
+							System.out.println("Iniciar novamente o programa? (s / n)");
+								String escolha1 = scan.next();
+									if (escolha1.equals("s"))
+										ProcessoSeletivo.main(args);
+									else
+										System.out.println("Finalizando programa....");
+						}
+					}
+				} catch (InputMismatchException e){
+					System.out.println("Entre apenas com valores numericos !");
 					
-					if (escolha.equals("s")) {
-						novamente = true;
-					}
-					else { 
-						novamente = false;
-						System.out.println("Iniciar novamente o programa? (s / n)");
-							String escolha1 = scan.next();
-								if (escolha1.equals("s"))
-									ProcessoSeletivo.main(args);
-								else
-									System.out.println("Finalizando programa....");
-					}
 				}
-			} catch (InputMismatchException e){
-				System.out.println("Entre apenas com valores numericos !");
-				
 			}
 	}
 		

@@ -1,12 +1,9 @@
 package edu.caue.cases;
 
 import java.util.concurrent.ThreadLocalRandom;
-import java.util.Scanner;
 
 public class ProcessoSeletivo2 {
     public static void main(String[] args) {
-        
-        Scanner scan = new Scanner(System.in);
         
         String [] candidatos = {"FELIPE","MÁRCIA","JULIA","PAULO","AUGUSTO","MÔNICA","FABRÍCIO","MIRELA","DANIELA","JORGE"};
         double [] salarioPretendido = new double[10];
