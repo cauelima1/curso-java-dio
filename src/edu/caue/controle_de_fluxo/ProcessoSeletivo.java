@@ -1,4 +1,4 @@
-package exercicios_java_eclipse;
+package edu.caue.controle_de_fluxo;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -24,7 +24,12 @@ public class ProcessoSeletivo {
 					}
 					else { 
 						novamente = false;
-						System.out.println("Finalizando programa...");
+						System.out.println("Iniciar novamente o programa? (s / n)");
+							String escolha1 = scan.next();
+								if (escolha1.equals("s"))
+									ProcessoSeletivo.main(args);
+								else
+									System.out.println("Finalizando programa....");
 					}
 				}
 			} catch (InputMismatchException e){
