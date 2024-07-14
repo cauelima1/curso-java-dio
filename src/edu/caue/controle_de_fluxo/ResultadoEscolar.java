@@ -9,7 +9,7 @@ public class ResultadoEscolar {
         else if(nota > 5 && nota < 7)
         System.out.println("Prova de Recupeção");
         else
-        System.out.println("Reprovado");
+        System.out.println("Reprovado  - teste commit");
     }
     
 }

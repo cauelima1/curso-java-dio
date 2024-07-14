@@ -22,7 +22,7 @@ public class ProcessoSeletivo2 {
         }
 
         int contador=0;
-        for (int i=0; i <=9; i++){ //verificacao para nao ultrapassar 5 pessoas
+        for (int i=0; i <=9; i++){ //verificacao para nao ultrapassar 5 pessoas.
             if (salarioPretendido[i] <= 2000 && contador <5){
                 System.out.println("Vaga Garantida para - " + candidatos[i]);
                 contador +=1;

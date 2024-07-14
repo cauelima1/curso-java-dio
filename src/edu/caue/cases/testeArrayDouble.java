@@ -11,7 +11,7 @@ public class testeArrayDouble {
                 System.out.println(salarios[i]); 
             }
     }
-    
+    //teste 
    
     static double valorPretendido() {
         return ThreadLocalRandom.current().nextDouble(1800, 2200);

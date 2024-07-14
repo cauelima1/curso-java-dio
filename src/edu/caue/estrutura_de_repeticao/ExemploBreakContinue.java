@@ -14,7 +14,7 @@ public class ExemploBreakContinue {
         for (int n=1; n<=5; n++){
             if (n==3)
             continue;
-        
+        //teste
             System.out.println(n);
         }
 
